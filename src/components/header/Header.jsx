@@ -1,3 +1,4 @@
+import ThemeColorToggle from "../themeColorToggle/ThemeColorToggle";
 import styles from "./Header.module.css";
 import classNames from "classnames";
 
@@ -10,6 +11,9 @@ export default function Header() {
       >
         Food App
       </h1>
+      <div className={styles.container}>
+        <ThemeColorToggle />
+      </div>
     </header>
   );
 }
