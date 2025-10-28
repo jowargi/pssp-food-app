@@ -1,9 +1,21 @@
 import { configureStore } from "@reduxjs/toolkit";
+import { authorizedUsersSlice } from "./slices/authorizedUsers/slice";
+import { requestsSlice } from "./slices/requests/slice";
+import { reviewsApi } from "./api/reviews/api";
+import { dishesApi } from "./api/dishes/api";
+import { cartSlice } from "./slices/cart/slice";
+import { usersApi } from "./api/users/api";
 import { restaurantsApi } from "./api/restaurants/api";
 
 export const store = configureStore({
   reducer: {
+    [requestsSlice.name]: requestsSlice.reducer,
+    [authorizedUsersSlice.name]: authorizedUsersSlice.reducer,
+    [cartSlice.name]: cartSlice.reducer,
     [restaurantsApi.reducerPath]: restaurantsApi.reducer,
+    [dishesApi.reducerPath]: dishesApi.reducer,
+    [reviewsApi.reducerPath]: reviewsApi.reducer,
+    [usersApi.reducerPath]: usersApi.reducer,
   },
 
   middleware: (getDefaultMiddleware) =>
@@ -11,5 +23,10 @@ export const store = configureStore({
       thunk: true,
       immutableCheck: false,
       serializableCheck: false,
-    }).concat(restaurantsApi.middleware),
+    }).concat(
+      restaurantsApi.middleware,
+      dishesApi.middleware,
+      reviewsApi.middleware,
+      usersApi.middleware
+    ),
 });
