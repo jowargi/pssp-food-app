@@ -8,7 +8,6 @@ export const restaurantsApi = createApi({
   endpoints: (builder) => ({
     getRestaurants: builder.query({
       query: () => "/restaurants",
-
       providesTags: ["Restaurants"],
     }),
 
