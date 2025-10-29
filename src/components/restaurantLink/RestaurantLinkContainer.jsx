@@ -1,4 +1,5 @@
 import { useGetRestaurantsQuery } from "../../redux/api/restaurants/api";
+import RestaurantLink from "./RestaurantLink";
 
 export default function RestaurantLinkContainer({ restaurantId }) {
   const { data: restaurant } = useGetRestaurantsQuery(undefined, {
@@ -10,5 +11,10 @@ export default function RestaurantLinkContainer({ restaurantId }) {
 
   const { name: restaurantName } = restaurant;
 
-  return null;
+  return restaurantId && restaurantName ? (
+    <RestaurantLink
+      restaurantId={restaurantId}
+      restaurantName={restaurantName}
+    />
+  ) : null;
 }
