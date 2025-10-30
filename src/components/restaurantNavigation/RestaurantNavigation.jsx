@@ -3,7 +3,7 @@ import styles from "./RestaurantNavigation.module.css";
 
 export default function RestaurantNavigation({ restaurantIds }) {
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul className={styles.list}>
         {restaurantIds.map((restaurantId) => (
           <li key={restaurantId} className={styles.item}>
