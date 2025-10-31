@@ -10,7 +10,7 @@ export default function RestaurantContainer({ restaurantId }) {
     isError,
   } = useGetRestaurantByIdQuery(restaurantId);
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading) return <p>Загрузка...</p>;
 
   if (isError)
     return <ErrorFallback name={error.status} message={error.error} />;

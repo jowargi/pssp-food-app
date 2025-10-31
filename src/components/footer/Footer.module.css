@@ -1,18 +1,28 @@
 .footer {
   padding: 1rem;
-  border: 1px solid var(--color-border);
+  border-radius: 8px;
   margin: 1rem;
-  background-color: var(--color-main-bg);
+  
+}
+
+.footer--light{
+  background-color: #e7eeff;
+    color: var(--color-text-p);
+}
+
+.footer--dark{
+  background-color: rgb(47, 55, 66);
+  color: #cfdefd;
 }
 
 .copyright {
-  color: var(--color-text-p);
+/*   color: var(--color-text-p); */
   text-align: center;
   font-size: var(--font-size-p);
 }
 
 .address {
-  color: var(--color-text-p);
+/*   color: var(--color-text-p); */
   text-align: center;
   font-size: var(--font-size-p);
 }

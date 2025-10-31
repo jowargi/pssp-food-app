@@ -1,12 +1,28 @@
 .container {
   padding: 1rem;
-  border: 1px solid var(--color-border);
-  background-color: var(--color-section-bg);
+  /* border: 1px solid ; */
+  /* border: 1px solid var(--color-border); */
+}
+
+.container--light {
+  background-color: #e7eeff;
+}
+
+.container-dark {
+  background-color: rgb(47, 55, 66);
 }
 
 .title {
   margin-bottom: 1rem;
-  color: var(--color-text-heading);
   text-align: center;
+  color: #e7eeff;
   font-size: var(--font-size-h2);
+}
+
+.title--light {
+  color: rgb(80, 94, 114);
+}
+
+.title-dark {
+  color: #e7eeff;
 }
