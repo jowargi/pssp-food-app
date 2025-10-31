@@ -1,10 +1,23 @@
 .button {
   padding: 0.5rem;
-  border: 1px solid var(--color-button-border);
+  border-radius: 8px;
+  border: 0;
   background-color: var(--color-button-bg);
   color: var(--color-button-text);
-  font-size: var(--font-size-button);
+  font-size: 150%;
   line-height: 1;
+  width: 40px;
+  height: 40px;
+}
+
+.button--light {
+  background-color: rgb(28, 49, 78);
+  color:#cfdefd;
+}
+
+.button--dark{
+  background-color: #cfdefd;
+  color:rgb(49, 75, 111) ;
 }
 
 .button--disabled {

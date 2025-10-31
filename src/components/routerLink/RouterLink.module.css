@@ -1,16 +1,31 @@
 .link {
   display: block;
+
   padding: 0.5rem;
-  border: 1px solid var(--color-button-border);
-  background-color: var(--color-button-bg);
-  color: var(--color-button-text);
+
+  /*  border: 1px solid var(--color-button-border) */
+  /*   background-color: var(--color-button-bg); */
+  /*  color: var(--color-button-text); */
   text-align: center;
   text-decoration: none;
   font-size: var(--font-size-button);
+  border-radius: 6px;
+  transition: 100ms;
+}
+
+.link--light {
+  background-color: white;
+  color: rgb(47, 55, 66);
+}
+
+.link--dark {
+  background-color: #a0aec0;
+  color: white;
 }
 
 .link--active {
   border-color: var(--color-button-disabled-border);
   background-color: var(--color-button-disabled-bg);
   color: var(--color-button-disabled-text);
+  transform: scale(1.1);
 }
