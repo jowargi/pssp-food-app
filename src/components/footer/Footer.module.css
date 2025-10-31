@@ -2,27 +2,26 @@
   padding: 1rem;
   border-radius: 8px;
   margin: 1rem;
-  
 }
 
-.footer--light{
-  background-color: #e7eeff;
-    color: var(--color-text-p);
+.footer--light {
+  background-color: #cfdefd;
+  color: var(--color-text-p);
 }
 
-.footer--dark{
-  background-color: rgb(47, 55, 66);
+.footer--dark {
+  background-color: rgb(28, 49, 78);
   color: #cfdefd;
 }
 
 .copyright {
-/*   color: var(--color-text-p); */
+  /*   color: var(--color-text-p); */
   text-align: center;
   font-size: var(--font-size-p);
 }
 
 .address {
-/*   color: var(--color-text-p); */
+  /*   color: var(--color-text-p); */
   text-align: center;
   font-size: var(--font-size-p);
 }
