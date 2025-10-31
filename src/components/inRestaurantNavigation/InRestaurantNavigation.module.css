@@ -8,5 +8,14 @@
   overflow-x: auto;
   gap: 1%;
   padding: 1rem;
-  border: 1px solid var(--color-border);
+  border-radius: 6px;
+    justify-content: center;
+}
+
+.list--light {
+  border: 2px solid rgb(173, 192, 219);
+}
+
+.list--dark {
+  border: 2px solid #969dab;
 }

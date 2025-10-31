@@ -5,6 +5,7 @@
 .list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   overflow-x: auto;
   padding: 1rem;
   border-radius: 6px;
