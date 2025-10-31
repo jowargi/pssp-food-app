@@ -4,7 +4,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  /* border: 1px solid #727782; */
+}
+
+.item--light{
+  border: 2px solid rgb(173, 192, 219);
+}
+
+.item--dark{
+  border: 2px solid #969dab;
 }
 
 .item:not(:last-child) {
@@ -12,11 +21,27 @@
 }
 
 .title {
-  color: var(--color-text-heading);
+  /* color: white; */
   font-size: var(--font-size-h5);
 }
 
+.title--light {
+  color: rgb(80, 94, 114);
+}
+
+.title--dark {
+  color: #e7eeff;
+}
+
 .ingredients {
-  color: var(--color-text-p);
+  /* color: var(--color-text-p); */
   font-size: var(--font-size-p);
+}
+
+.ingredients--light{
+  color: rgb(80, 94, 114);
+}
+
+.ingredients--dark {
+  color: #e7eeff;
 }
